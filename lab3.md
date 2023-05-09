@@ -12,14 +12,21 @@ Another way to use this command is searching for files based on their extension.
 Source: https://www.tecmint.com/35-practical-examples-of-linux-find-command/
 
 2. Another useful way to use ```find``` is with ```-size```. The ```-size``` option allows you to find files or directories greater than or less than a certain size. In the example below, I run the follwing command: ```find . -type f -size -10M``` and it lists all the files in the current directory that is less than 10MB. 
-<p align="center"> <img src = "Screen Shot 2023-05-09 at 4.16.57 PM.png" width = "300" height = "450"> </p>
-Another way of using ```-size``` would be to find the files that are greater than a certain size. You can do this by running ``` find . -type f size +1M```. As you can see in the image below, none of the files in the current technical directory is greater than 1MB. 
+<p align="center"> <img src = "Screen Shot 2023-05-09 at 4.16.57 PM.png" width = "300" height = "490"> </p>
 
-<p align="center"> <img src = "Screen Shot 2023-05-09 at 2.49.09 PM.png" width = "550" height = "50"> </p>
+Another way of using ```-size``` would be to find the files that are greater than a certain size. You can do this by running ``` find . -type f size +1M```. As you can see in the image below, none of the files in the current technical directory is greater than 1MB. 
+<p align="center"> <img src = "Screen Shot 2023-05-09 at 4.29.51 PM.png" width = "550" height = "50"> </p>
 
 Source: https://geekflare.com/linux-find-commands/
 
-3. 
+3. The ```find``` command is also useful when we want to see when a file was last modified, accessed, or created. We can use ```-mtime``` to find the files last modified within a certain time frame. ```ctime``` can be used to find the files created within the time frame given and ```atime``` can give the files that were accessed within the time frame. For example if we wanted to find the files modified within the past 2 days, we can run the following command: ```find . -type f -mtime -2```. As you can see in the image below, there were no files that were modified within the last 2 days.
+<p align="center"> <img src = "Screen Shot 2023-05-09 at 2.49.09 PM.png" width = "550" height = "50"> </p>
+
+Similarly, if we wanted to find the files that were created within the last two days, we can run ``find . -type f -ctime +2```. This command looks into the current directory and finds all the files that were created within the past 2 days. 
+
+4.  
+
+
 
 
 
