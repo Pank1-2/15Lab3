@@ -27,6 +27,10 @@ Similarly, if we wanted to find the files that were created within the last two 
 Source: https://linuxhandbook.com/find-command-examples/
 
 4. You can also use multiple find option commands together. For example, you can use the ```-name``` with ```-exec```. A command you can run while combining multiple find options would be ```find . -name "*.txt" -exec echo {} \;```. This command finds all the files that end in .txt and executes the echo command on the file. The {} represents the file that was found and the \; indicates the end of the command. Below is an image of this command ran in the technical directory. 
+<p align="center"> <img src = "Screen Shot 2023-05-09 at 5.58.45 PM.png" width = "300" height = "450"> </p>
+
+Another way you can use the ```-exec``` is by combining it with ```grep``` as well. For example you can run the following command: ```find . -name "*.txt" -exec grep "chapter" {} \;```. This command finds all the files ending with .txt and executes the grep command that takes in a keyword which in this case is 'chapter'. This will print out the contents of the files that contain the keyword chapter. 
+
 
 
 
