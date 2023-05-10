@@ -20,7 +20,7 @@ Another way of using ```-size``` would be to find the files that are greater tha
 Source: https://geekflare.com/linux-find-commands/
 
 3. The ```find``` command is also useful when we want to see when a file was last modified, accessed, or created. We can use ```-mtime``` to find the files last modified within a certain time frame. ```ctime``` can be used to find the files created within the time frame given and ```atime``` can give the files that were accessed within the time frame. For example if we wanted to find the files modified within the past 2 days, we can run the following command: ```find . -type f -mtime -2```. As you can see in the image below, there were no files that were modified within the last 2 days.
-<p align="center"> <img src = "Screen Shot 2023-05-09 at 2.49.09 PM.png" width = "550" height = "50"> </p>
+<p align="center"> <img src = "Screen Shot 2023-05-09 at 4.47.04 PM.png" width = "550" height = "50"> </p>
 
 Similarly, if we wanted to find the files that were created within the last two days, we can run ``find . -type f -ctime +2```. This command looks into the current directory and finds all the files that were created within the past 2 days. 
 
