@@ -23,8 +23,10 @@ Source: https://geekflare.com/linux-find-commands/
 <p align="center"> <img src = "Screen Shot 2023-05-09 at 4.47.04 PM.png" width = "550" height = "50"> </p>
 
 Similarly, if we wanted to find the files that were created within the last two days, we can run ``find . -type f -ctime +2```. This command looks into the current directory and finds all the files that were created within the past 2 days. 
+<p align="center"> <img src = "Screen Shot 2023-05-09 at 4.50.09 PM.png" width = "300" height = "450"> </p>
+Source: https://linuxhandbook.com/find-command-examples/
 
-4.  
+4. You can also use multiple find option commands together. For example, you can use the ```-name``` with ```-exec```. A command you can run while combining multiple find options would be ```find . -name "*.txt" -exec echo {} \;```. This command finds all the files that end in .txt and executes the echo command on the file. The {} represents the file that was found and the \; indicates the end of the command. Below is an image of this command ran in the technical directory. 
 
 
 
