@@ -31,7 +31,9 @@ Source: https://linuxhandbook.com/find-command-examples/
 
 Another way you can use the ```-exec``` is by combining it with ```grep``` as well. For example you can run the following command: ```find . -name "*.txt" -exec grep "chapter" {} \;```. This command finds all the files ending with .txt and executes the grep command that takes in a keyword which in this case is 'chapter'. This will print out the contents of the files that contain the keyword chapter. 
 
+<p align="center"> <img src = "Screen Shot 2023-05-09 at 6.05.57 PM.png" width = "450" height = "450"> </p>
 
+Source: https://www.baeldung.com/linux/find-exec-command
 
 
 
